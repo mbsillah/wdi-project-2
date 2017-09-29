@@ -7,9 +7,9 @@ const CharacterSchema = new Schema({
     img: String
 });
 
-//const TeamSchema = new Schema({
-//    characters: [CharacterSchema]
-//});
+const TeamSchema = new Schema({
+    characters: [CharacterSchema]
+});
 
 
 const PlayerSchema = new Schema({
@@ -18,18 +18,18 @@ const PlayerSchema = new Schema({
         required: true
     },
     img: String,
-    characters: [CharacterSchema] 
+    team: [TeamSchema] 
 });
 
 
 
 const PlayerModel = mongoose.model('Player', PlayerSchema);
-//const TeamModel = mongoose.model('Team', TeamSchema);
+const TeamModel = mongoose.model('Team', TeamSchema);
 const CharacterModel = mongoose.model('Character', CharacterSchema);
 
 
 module.exports = {
     PlayerModel: PlayerModel,
-    //TeamModel: TeamModel,
+    TeamModel: TeamModel,
     CharacterModel: CharacterModel
 }
