@@ -1,0 +1,20 @@
+<div>
+    <h1>{{player.gamertag}}</h1>
+    <img src="{{player.img}}">
+</div>
+
+<h3>Team:</h3>
+{{#each player.characters}}
+<div>
+    {{this.name}}
+</div>
+<div>
+    <img src="{{this.img}}" alt="{{this.name}}">
+</div>
+</div>
+{{/each}}
+
+
+<a href="/players/{{player._id}}/edit">Edit Player</a>
+<a href="/players/{{player.id}}/delete">Delete</a>
+<a href="/players/">Return to List</a>

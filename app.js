@@ -6,10 +6,13 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI); 
-
-var mongoose = require('mongoose');
+const methodOverride = require('method-override');
 mongoose.connect(process.env.MONGODB_URI);
+
+mongoose.Promise = global.Promise
+mongoose.connect(process.env.MONGODB_URI, {useMongoClient: true});
+
+var index = require('./routes/index');
 
 const db = mongoose.connection
 
@@ -32,8 +35,16 @@ app.set('view engine', 'hbs');
 app.use(logger('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false }));
+app.use(methodOverride('_method'));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+
+app.use('/', index);
+
+//CONTROLLERS
+
+const playerController = require('./routes/playerController');
+app.use('/players', playerController);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
