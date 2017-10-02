@@ -1,7 +1,8 @@
 require('dotenv').config();
 
 const mongoose = require('mongoose');
-mongoose.connect(process.env.MONGODB_URI);
+//mongoose.connect(process.env.MONGODB_URI);
+mongoose.connect("mongodb://heroku_1ddt7tjx:jj97anojlueslaidfjj7vmrhgl@ds155644.mlab.com:55644/heroku_1ddt7tjx")
 
 const db = mongoose.connection;
 
@@ -18,7 +19,6 @@ db.once('open', () => {
 const Schema = require("./schema.js");
 
 const PlayerModel = Schema.PlayerModel;
-//const TeamModel = Schema.TeamModel;
 const CharacterModel = Schema.CharacterModel;
 
 PlayerModel.remove({}, (err) => {
@@ -30,9 +30,6 @@ CharacterModel.remove({}, (err) => {
 })
 
 const musa = new PlayerModel({ firstName: "Musa", lastName: "Sillah", gamertag: `Macktastic`, img: `https://i.imgur.com/Tf2Z9dj.jpg`, twitter: "twitter.com/MusaFGC" })
-//const rafytoro = new PlayerModel({firstName: "Rafael", lastName: "Toro", gamertag: `RafyToro`, img: `https://i.imgur.com/Tf2Z9dj.jpg`, twitter: "twitter.com/MusaFGC" })
-
-
 
 musa.characters = characters.filter((character) => {
     return (character.name === "Magneto" || character.name === "Doctor Doom" || character.name === "Amaterasu")
