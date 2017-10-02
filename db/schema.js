@@ -26,7 +26,7 @@ const PlayerSchema = new Schema({
         required: true
     },
     img: String,
-    twitter: String,
+    twitterHandle: String,
     characters: [CharacterSchema]
     //team: [TeamSchema] 
 });

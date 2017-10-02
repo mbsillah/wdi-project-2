@@ -5,3 +5,14 @@ body {
 a {
   color: #00B7FF;
 }
+
+h1, h3{
+  font-size: 30px
+}
+
+#profilePic {
+  height: auto; 
+    width: auto; 
+    max-width: 250px; 
+    max-height: 250px;
+}
