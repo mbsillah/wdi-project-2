@@ -20,11 +20,15 @@
 </div>
 </div>
 {{/each}}
+
 <div>
-<a href="/players/{{player._id}}/characters/{{player.characters.0._id}}&{{player.characters.1._id}}&{{player.characters.2._id}}/edit">Add/Edit Team</a>
+<a href="/players/{{player._id}}/characters/new">Add Team</a>
 </div>
 <div>
-<a href="/players/{{player.id}}/delete">Delete Team</a>
+<a href="/players/{{player._id}}/characters/{{player.characters.0._id}}&{{player.characters.1._id}}&{{player.characters.2._id}}/edit">Edit Team</a>
+</div>
+<div>
+<a href="/players/{{player._id}}/characters/{{player.characters.0._id}}&{{player.characters.1._id}}&{{player.characters.2._id}}/delete">Delete Team</a>
 </div>
 
 <div>
