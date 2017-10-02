@@ -1,8 +1,8 @@
 require('dotenv').config();
 
 const mongoose = require('mongoose');
-//mongoose.connect(process.env.MONGODB_URI);
-mongoose.connect("mongodb://heroku_1ddt7tjx:jj97anojlueslaidfjj7vmrhgl@ds155644.mlab.com:55644/heroku_1ddt7tjx")
+mongoose.connect(process.env.MONGODB_URI);
+//mongoose.connect("mongodb://heroku_1ddt7tjx:jj97anojlueslaidfjj7vmrhgl@ds155644.mlab.com:55644/heroku_1ddt7tjx")
 
 const db = mongoose.connection;
 

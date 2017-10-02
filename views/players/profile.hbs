@@ -1,6 +1,7 @@
 <div>
     <h1>{{player.firstName}} "{{player.gamertag}}" {{player.lastName}}</h1>
     <img src="{{player.img}}">
+    <p>Follow me at <a href="{{player.twitter}}"></a></p>
 </div>
 
 <div>
@@ -9,6 +10,7 @@
 <div>
 <a href="/players/{{player.id}}/delete">Delete</a>
 </div>
+
 
 <h3>Team:</h3>
 {{#each player.characters}}
