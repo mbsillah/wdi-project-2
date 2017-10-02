@@ -4,6 +4,7 @@ const router = express.Router();
 const Schema = require("../db/schema.js");
 const PlayerModel = Schema.PlayerModel;
 
+
 //Index Route
 router.get('/', (req, res) => {
     PlayerModel.find({})

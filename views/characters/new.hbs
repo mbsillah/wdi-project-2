@@ -1,0 +1,32 @@
+<h1>Select your Characters</h1>
+
+<form action="/players/{{player._id}}/characters/{{player.characters.0._id}}&{{player.characters.1._id}}&{{player.characters.2._id}}?_method=PUT" method="POST">
+<div>
+    <label for="Character1">Character 1</label>
+    <select name="character1" id="point character">
+            <option> - Pick A Character - </option>
+    {{#each characters}}
+    <option value="{{this._id}}">{{this.name}}</option>
+    {{/each}}
+    </select>
+</div>
+<div>
+    <label for="Character2">Character 2</label>
+    <select name="character2" id="battery character">
+            <option> - Pick A Character - </option>
+    {{#each characters}}
+    <option value="{{this._id}}">{{this.name}}</option>
+    {{/each}}
+    </select>
+</div>
+<div>
+   <label for="Character3">Character 3</label>
+    <select name="character3" id="anchor character">
+            <option> - Pick A Character - </option>
+    {{#each characters}}
+    <option value="{{this._id}}">{{this.name}}</option>
+    {{/each}}
+    </select>
+</div>
+<input type="submit" value="Update">
+</form>

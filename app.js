@@ -46,6 +46,9 @@ app.use('/', index);
 const playerController = require('./routes/playerController');
 app.use('/players', playerController);
 
+const characterController = require('./routes/characterController');
+app.use('/players/:playerId/characters', characterController);
+
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

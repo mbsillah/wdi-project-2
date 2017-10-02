@@ -7,29 +7,39 @@ const CharacterSchema = new Schema({
     img: String
 });
 
-const TeamSchema = new Schema({
-    characters: [CharacterSchema]
-});
+//const TeamSchema = new Schema({
+//    characters: [CharacterSchema]
+//});
 
 
 const PlayerSchema = new Schema({
+    firstName: {
+        type: String,
+        required: true
+    },
+    lastName: {
+        type: String,
+        required: true
+    },
     gamertag: {
         type: String,
         required: true
     },
     img: String,
-    team: [TeamSchema] 
+    twitter: String,
+    characters: [CharacterSchema]
+    //team: [TeamSchema] 
 });
 
 
 
 const PlayerModel = mongoose.model('Player', PlayerSchema);
-const TeamModel = mongoose.model('Team', TeamSchema);
+//const TeamModel = mongoose.model('Team', TeamSchema);
 const CharacterModel = mongoose.model('Character', CharacterSchema);
 
 
 module.exports = {
     PlayerModel: PlayerModel,
-    TeamModel: TeamModel,
+    //TeamModel: TeamModel,
     CharacterModel: CharacterModel
 }

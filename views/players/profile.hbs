@@ -1,6 +1,13 @@
 <div>
-    <h1>{{player.gamertag}}</h1>
+    <h1>{{player.firstName}} "{{player.gamertag}}" {{player.lastName}}</h1>
     <img src="{{player.img}}">
+</div>
+
+<div>
+<a href="/players/{{player._id}}/edit">Edit Player</a>
+</div>
+<div>
+<a href="/players/{{player.id}}/delete">Delete</a>
 </div>
 
 <h3>Team:</h3>
@@ -13,8 +20,13 @@
 </div>
 </div>
 {{/each}}
+<div>
+<a href="/players/{{player._id}}/characters/{{player.characters.0._id}}&{{player.characters.1._id}}&{{player.characters.2._id}}/edit">Add/Edit Team</a>
+</div>
+<div>
+<a href="/players/{{player.id}}/delete">Delete Team</a>
+</div>
 
-
-<a href="/players/{{player._id}}/edit">Edit Player</a>
-<a href="/players/{{player.id}}/delete">Delete</a>
+<div>
 <a href="/players/">Return to List</a>
+</div>
