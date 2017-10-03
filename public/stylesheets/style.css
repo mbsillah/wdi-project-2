@@ -8,8 +8,7 @@ body {
 }
 
 a {
-  color: red;
-  background-color:rgba(255,255,255,0.4);
+  color: white;
   border-radius: 25px;
 }
 
@@ -21,14 +20,12 @@ a {
 
 .title{
   font-size: 30px;
-  color: black;
-  background-color:rgba(128,128,128,0.4);
+  color: white;
   border-radius: 5px;
 }
 
 p {
-  color: black;
-  background-color:rgba(128,128,128,0.4);
+  color: white;
   border-radius: 25px;
   
 }
@@ -53,10 +50,6 @@ p {
   
 }
 
-.characterContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: nowrap;
 
-}
+
+
