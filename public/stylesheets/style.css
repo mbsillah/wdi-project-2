@@ -1,18 +1,44 @@
 body {
   padding: 50px;
+  background-image: url("https://i.ytimg.com/vi/S1hTW2VFpJ4/maxresdefault.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  font-family: 'Istok Web', sans-serif;
+  
 }
 
 a {
   color: #00B7FF;
 }
 
+.container {
+  background-color: gray
+  
+}
+
 h1, h3{
   font-size: 30px
 }
 
+
+header{
+display: block;
+
+}
+
 #profilePic {
   height: auto; 
-    width: auto; 
-    max-width: 250px; 
-    max-height: 250px;
+  width: auto; 
+  max-width: 250px; 
+  max-height: 250px;
+  border-style: solid;
+  border-color: blue;
+  border-width: 5px;
+}
+
+
+.characterImage {
+  border-style: solid;
+  border-color: blue;
+  border-width: 5px;
 }

@@ -11,9 +11,6 @@ router.get('/new', (req, res) => {
     PlayerModel.findById(playerId)
         .then((player) => {
             CharacterModel.find({}).then((characters => {
-                $(document).ready(function() {
-                    $('select').material_select();
-                  });
                 res.render('characters/new', {
                     characters: characters,
                     player: player

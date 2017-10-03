@@ -1,11 +1,11 @@
 <div>
-    <h1>{{player.firstName}} "{{player.gamertag}}" {{player.lastName}}</h1>
-    <img class="z-depth-5 responsive-img" src="{{player.img}}" id="profilePic">
+    <h1 class="title">{{player.firstName}} "{{player.gamertag}}" {{player.lastName}}</h1>
+    <img src="{{player.img}}" class="img-thumbnail" id="profilePic">
     <p>Follow me at <a href="http://twitter.com/{{player.twitterHandle}}">Twitter</a></p>
 </div>
 
 <div>
-<a class="btn waves-effect waves-teal hoverable" href="/players/{{player._id}}/edit">Edit Player</a>
+<a href="/players/{{player._id}}/edit">Edit Player</a>
 
 </div>
 <div>
@@ -13,13 +13,13 @@
 </div>
 
 
-<h3>Team:</h3>
+<h3 class="title">Team:</h3>
 {{#each player.characters}}
 <div>
     {{this.name}}
 </div>
 <div>
-    <img class="z-depth-5" src="{{this.img}}" alt="{{this.name}}">
+    <img class="characterImage img-thumbnail" src="{{this.img}}" alt="{{this.name}}">
 </div>
 </div>
 {{/each}}
@@ -31,7 +31,8 @@
 <a href="/players/{{player._id}}/characters/{{player.characters.0._id}}&{{player.characters.1._id}}&{{player.characters.2._id}}/edit">Edit Team</a>
 </div>
 <div>
-<a href="/players/{{player._id}}/characters/{{player.characters.0._id}}&{{player.characters.1._id}}&{{player.characters.2._id}}/delete">Delete Team</a>
+<button type="button" class="btn btn-danger" href="/players/{{player._id}}/characters/{{player.characters.0._id}}&{{player.characters.1._id}}&{{player.characters.2._id}}/delete">Delete Team</button> 
+    
 </div>
 
 <div>
