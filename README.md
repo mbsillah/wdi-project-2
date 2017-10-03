@@ -12,7 +12,7 @@ I have created a simple game of blackjack. It uses many functions to handle the 
  * Project Planning - [Trello](https://trello.com/b/CZtnwjww/wdi-project-2)
  * [ERD](https://github.com/sillah2010/wdi-project-2/blob/master/Screen%20Shots/IMG_1511.JPG)
 
- ##Wireframes
+## Wireframes
  * [1](<https://github.com/sillah2010/wdi-project-2/blob/master/Screen%20Shots/Screen%20Shot%202017-09-28%20at%2011.32.51%20AM.png>)
  * [2](<https://github.com/sillah2010/wdi-project-2/blob/master/Screen%20Shots/Screen%20Shot%202017-09-28%20at%2011.33.21%20AM.png>)
  * [3](<https://github.com/sillah2010/wdi-project-2/blob/master/Screen%20Shots/Screen%20Shot%202017-09-28%20at%2011.35.18%20AM.png>)
