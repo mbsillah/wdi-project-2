@@ -8,23 +8,31 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: red;
+  background-color:rgba(255,255,255,0.4);
+  border-radius: 25px;
 }
 
 .container {
-  background-color: gray
+  border-radius: 25px;
+  margin-top: 0px;
   
 }
 
-h1, h3{
-  font-size: 30px
+.title{
+  font-size: 30px;
+  color: black;
+  background-color:rgba(128,128,128,0.4);
+  border-radius: 5px;
 }
 
-
-header{
-display: block;
-
+p {
+  color: black;
+  background-color:rgba(128,128,128,0.4);
+  border-radius: 25px;
+  
 }
+
 
 #profilePic {
   height: auto; 
@@ -34,6 +42,7 @@ display: block;
   border-style: solid;
   border-color: blue;
   border-width: 5px;
+ 
 }
 
 
@@ -41,4 +50,13 @@ display: block;
   border-style: solid;
   border-color: blue;
   border-width: 5px;
+  
+}
+
+.characterContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+
 }
