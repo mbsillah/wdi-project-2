@@ -7,7 +7,7 @@ I've played Marvel vs Capcom 3 since it came out in 2011, and I've always wanted
 
 
 ## Technologies Used
- * HTML5, CSS3, Javascript, Bootstrap, Express, MongoDB, Mongoose
+ * HTML5, CSS3, Javascript, Bootstrap, Express, Node, MongoDB, Mongoose
  * Visual Studio Code
  * Project Planning - [Trello](https://trello.com/b/CZtnwjww/wdi-project-2)
  * [ERD](https://github.com/sillah2010/wdi-project-2/blob/master/Screen%20Shots/IMG_1511.JPG)
