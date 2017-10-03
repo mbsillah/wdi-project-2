@@ -1,6 +1,7 @@
 require('dotenv').config();
 var express = require('express');
 var path = require('path');
+var $ = require('jquery')
 var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
@@ -48,6 +49,7 @@ app.use('/players', playerController);
 
 const characterController = require('./routes/characterController');
 app.use('/players/:playerId/characters', characterController);
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
