@@ -1,7 +1,7 @@
 # General Assembly Project 2: Georgia Ultimate Marvel vs Capcom 3 Player Database
 ## Overview
 
-I have created a simple game of blackjack. It uses many functions to handle the core game mechanics. The event handlers (buttons) call the approriate functions for each phase of the game.
+I've played Marvel vs Capcom 3 since it came out in 2011, and I've always wanted a database of players to follow. This database allows the user to add players and pick there main characters for every fan of the scene to view.
 
 **Live Site:** <https://aqueous-inlet-61260.herokuapp.com/>
 
@@ -19,7 +19,8 @@ I have created a simple game of blackjack. It uses many functions to handle the 
 
 
 ## Future Updates
-* Wins, Losses, Draw Score Keeper.
-* Allows the user to bet in-game-currency on each turn.
-* Adding a notification of win or losses via DOM Manipulation and not relying on alerts. 
-* Adding a function that changes the value of any ace card from 1 or 11 depending on the current hand value
+* Add Materialize CSS for a cleaner, more modern design.
+* Add a login form and being able to track additions/edits to database based on account.
+* Being able to add multiple teams for one player.
+* Add multiple games and different dbs for said games. 
+* Able to select and highlight the most used team per player.
